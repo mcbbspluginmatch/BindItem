@@ -1,0 +1,21 @@
+#绑定石
+item:
+  ==: org.bukkit.inventory.ItemStack
+  type: EMERALD
+  meta:
+    ==: ItemMeta
+    meta-type: UNSPECIFIC
+    display-name: 绑定宝石
+    lore:
+      - 将绑定宝石拖到物品上绑定
+    enchants:
+      DURABILITY: 1
+#禁止绑定的物品id列表
+blackList:
+  - 1
+message: '绑定成功!'
+message2: '绑定石不能叠加'
+message3: '物品已绑定'
+message4: '该物品无法绑定'
+#绑定的lore
+bindLore: '物品已绑定'

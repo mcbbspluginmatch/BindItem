@@ -1,0 +1,16 @@
+name: BindItem
+version: ${project.version}
+main: cn.mcimy.binditem.BindItem
+prefix: '绑定'
+description: '绑定插件: 开源地址见website'
+author: Harbeth
+website: 'https://github.com/craftqwq/BindItem'
+
+commands:
+  binditem:
+    usage: §e/binditem §agive§7/§bbind §b<player>
+    permission: binditem.use
+    permission-message: 你没有权限
+    description: 绑定命令
+    aliases:
+      - bind
