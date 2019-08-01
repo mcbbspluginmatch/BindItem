@@ -13,6 +13,7 @@ import java.util.List;
 public final class BindItem extends JavaPlugin implements Listener {
 
     public ItemStack item;
+    //魔鬼变量名 - a39
     public String message;
     public String message2;
     public String message3;

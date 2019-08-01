@@ -42,6 +42,7 @@ public class BindCommand implements TabExecutor {
                         List<String> lore = meta.getLore() == null ? new ArrayList<>() : meta.getLore();
                         plugin.addBindLore(handItem, lore, meta);
                     } else {
+                        //编码规范: + 前后需要有空格 - a39
                         sender.sendMessage("请让 "+player.getName()+" 手持物品");
                     }
                     return true;

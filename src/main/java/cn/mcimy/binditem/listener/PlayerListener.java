@@ -58,7 +58,9 @@ public class PlayerListener implements Listener {
 
     @EventHandler
     public void onPlayerDeath(PlayerDeathEvent event) {
+
         boolean hasBindItem = false;
+        //严重BUG: 不使用迭代器移除的话会少遍历对象 - a39
         for (int i = 0; i < event.getDrops().size(); i++) {
             ItemStack item = event.getDrops().get(i);
             if (item.hasItemMeta() && item.getItemMeta().hasLore()) {
