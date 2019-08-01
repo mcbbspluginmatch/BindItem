@@ -72,6 +72,8 @@ public class PlayerListener implements Listener {
             event.setKeepInventory(true);
             for (int i = 0; i < event.getDrops().size(); i++) {
                 ItemStack item = event.getDrops().get(i);
+                // 考虑其他插件对掉落的处理/增加权限使部分用户不掉落
+                // 强制掉落不好 —— 754503921
                 event.getEntity().getWorld().dropItem(event.getEntity().getLocation(), item);
                 event.getEntity().getInventory().removeItem(item);
             }
